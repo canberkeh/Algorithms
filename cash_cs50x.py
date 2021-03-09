@@ -1,7 +1,6 @@
 '''
 Return the change to the customer. 0.25 - 0.10 - 0.05 - 0.01 are the coins. pick the less.
 '''
-
 def cash(change):
     new_change = round(change * 100)
     count = 0
