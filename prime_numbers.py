@@ -10,10 +10,10 @@
 
 #--------------------------------------------------------------
 def prime_numbers1(num):
-    sum, sieve = 0, ([True] * num)
+    sum, sieve = [], ([True] * num)
     for i in range(2, num): 
         if sieve[i]:
-            sum = sum + i
+            sum.append(i)
             for i in range(i * i, num, i):
                 sieve[i] = False
     print(sum)
